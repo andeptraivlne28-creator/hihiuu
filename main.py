@@ -30,7 +30,7 @@ used_uids = {}               # dict: { uid: date_obj }
 uids_lock = threading.Lock()
 
 api_keys = {
-    "ansoiu": {
+    "anmetmoi": {
         "exp": "18/11/2025",
         "remain": 50,
         "max_remain": 10,
