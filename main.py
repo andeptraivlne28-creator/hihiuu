@@ -31,9 +31,9 @@ uids_lock = threading.Lock()
 
 api_keys = {
     "ansoiu": {
-        "exp": "30/07/2095",
-        "remain": 999,
-        "max_remain": 999,
+        "exp": "18/11/2025",
+        "remain": 50,
+        "max_remain": 10,
         "last_reset": None
     }
 }
