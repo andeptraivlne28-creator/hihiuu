@@ -32,7 +32,7 @@ uids_lock = threading.Lock()
 api_keys = {
     "anmetmoi": {
         "exp": "18/11/2025",
-        "remain": 50,
+        "remain": 70,
         "max_remain": 10,
         "last_reset": None
     }
