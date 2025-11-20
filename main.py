@@ -226,12 +226,12 @@ async def refresh_tokens():
 async def clean_and_replace_tokens():
     global tokens
     with tokens_lock:
-        expired = [t for t, c in tokens.items() if c >= 27]
+        expired = [t for t, c in tokens.items() if c >= 15]
 
     if not expired:
         return
 
-    accounts = get_next_accounts(len(expired) + 5)
+    accounts = get_next_accounts(len(expired) + 20)
     if not accounts:
         return
 
