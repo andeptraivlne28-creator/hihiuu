@@ -351,7 +351,7 @@ async def sendLikes(uid):
         await generate_additional_tokens(need)
 
         with tokens_lock:
-            valid_tokens = [tk for tk, count in tokens.items() if count < 27]
+            valid_tokens = [tk for tk, count in tokens.items() if count < 15]
 
         if len(valid_tokens) < 1:
             return {"message": f"{len(valid_tokens)}"}, 200
