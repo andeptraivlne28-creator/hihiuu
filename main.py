@@ -344,7 +344,7 @@ async def sendLikes(uid):
 
     # 2) filter valid tokens
     with tokens_lock:
-        valid_tokens = [tk for tk, count in tokens.items() if count < 27]
+        valid_tokens = [tk for tk, count in tokens.items() if count < 15]
 
     if len(valid_tokens) < 115:
         need = 115 - len(valid_tokens)
